@@ -13,18 +13,26 @@
 
 <main class="card">
     <section class="hero">
-        <div class="eyebrow">✨ Solo para Inés ✨</div>
+        <div class="eyebrow">✨ Para Inés ✨</div>
         <h1>🎁 Misión: Desbloquear tu regalo</h1>
-        <p class="subtitle">
-            Tu sorpresa ya existe. Está protegida por 6 llaves.
-            Cada prueba superada desbloquea una llave. Cuando las tengas todas, podrás abrir el regalo final.
-        </p>
+       <p class="subtitle">
+    He preparado algo para ti.
+</p>
+
+<p class="subtitle">
+    No podrás descubrirlo todo de una vez.
+    Tendrás que ir superando cada prueba y conseguir las llaves una a una.
+</p>
+
+<p class="subtitle">
+    Cuando tengas todas, podrás descubrir la sorpresa que te espera el 10 de julio.
+</p>
     </section>
 
     <section class="countdown-panel">
-        <p class="label">⏳ Tiempo restante para el regalo final</p>
+        <p class="label">⏳ Cuenta atrás... ⏳</p>
         <div id="tripCountdown" class="big-countdown"></div>
-        <p class="date-label">10 de julio · 17:00</p>
+        <p class="date-label">10 de julio · 15:00</p>
     </section>
 
     <section class="next-box">
@@ -41,15 +49,14 @@
     <section class="tests" id="tests"></section>
 
     <section class="final locked" id="finalBox">
-        <h2>🎉 Regalo final</h2>
-        <p id="finalText">Necesitas conseguir las 6 llave para desbloquear la sorpresa.</p>
+        <h2>🔐 La sorpresa final 🔐</h2>
+        <p id="finalText">Todavía necesitas ${tests.length - solved.length} llaves para descubrir lo que he preparado para ti.</p>
         <button class="secondary" id="finalButton" onclick="tryReveal()">Intentar abrir</button>
 
         <div class="reveal" id="reveal">
-            <h2>Destino desbloqueado ❤️</h2>
-            <p><strong>Nos vamos a: [ESCRIBE AQUÍ EL DESTINO]</strong></p>
-            <p>Prepara la maleta. Este viaje es para nosotros.</p>
-            <p>Fechas: [ESCRIBE AQUÍ LAS FECHAS]</p>
+            <h2>Regalo desbloqueado ❤️</h2>
+            <p><strong>Nos vamos a...</strong></p>
+            <p>Prepara la maleta.</p>
         </div>
     </section>
 
