@@ -4,12 +4,12 @@
 const tripDate = new Date("2026-07-10T17:00:00");
 
 const tests = [
-    { title:"Prueba 1: El comienzo", unlockDate:new Date("2026-06-22T20:00:00"), page:"prueba1.html" },
-    { title:"Prueba 2: Nuestro código", unlockDate:new Date("2026-06-26T20:00:00"), page:"prueba2.html" },
-    { title:"Prueba 3: Acertijo viajero", unlockDate:new Date("2026-06-30T20:00:00"), page:"prueba3.html" },
-    { title:"Prueba 4: Búsqueda", unlockDate:new Date("2026-07-04T20:00:00"), page:"prueba4.html" },
-    { title:"Prueba 5: La penúltima llave", unlockDate:new Date("2026-07-08T20:00:00"), page:"prueba5.html" },
-    { title:"Prueba 6: El último paso", unlockDate:new Date("2026-07-09T20:00:00"), page:"prueba6.html" }
+    { title:"Prueba 1", unlockDate:new Date("2026-06-24T20:00:00"), page:"prueba1.html" },
+    { title:"Prueba 2", unlockDate:new Date("2026-06-27T20:00:00"), page:"prueba2.html" },
+    { title:"Prueba 3", unlockDate:new Date("2026-07-01T20:00:00"), page:"prueba3.html" },
+    { title:"Prueba 4", unlockDate:new Date("2026-07-04T20:00:00"), page:"prueba4.html" },
+    { title:"Prueba 5", unlockDate:new Date("2026-07-08T20:00:00"), page:"prueba5.html" },
+    { title:"Prueba 6", unlockDate:new Date("2026-07-10T15:00:00"), page:"prueba6.html" }
 ];
 
 function getSolved(){ return JSON.parse(localStorage.getItem("solvedTests") || "[]"); }
